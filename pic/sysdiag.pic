@@ -1,0 +1,27 @@
+.PS
+down
+Tablet: [
+    B: box shaded "cyan" "Android" " tablet" "" "" height 0.75 width 1.0
+    box shaded "green" "TouchDAW" width 0.85 height 0.25 with .s at last box .s
+]
+arrow 0.20
+ellipse shaded "yellow" "WiFi" height 0.25
+arrow same
+Router: [ box shaded "cyan" "WiFi" "router" width 1.0height 0.35 ]
+arrow same
+ellipse shaded "yellow" "Ethernet" height 0.25
+arrow same
+Raspi: [
+    B: box shaded "cyan" "" "" "" "" "" "Raspberry" "Pi" height 1.75 width 1.0
+    box shaded "green" width 0.85 height 0.20 "multimidicast" with .n at B.n
+    arrow same
+        D: box shaded "green" width 0.85 height 0.60 "node.js" with .n at last arrow.s
+        box width 0.75 height 0.20 "midi" with .n at D.n
+        box width 0.75 height 0.20 "rpi-ws281x" with .s at D.s
+    box width 0.85 height 0.20 "GPIO #18" with .s at B.s
+]
+arrow same
+LEDs: [
+    B: box shaded "cyan" "LEDs" width 1.0 height 0.25
+]
+.PE

@@ -1,0 +1,4 @@
+#!/bin/sh
+groff -p $1.pic > $1.ps
+ps2eps <$1.ps >$1.eps
+convert -geometry 800x600 -density 800 $1.eps -flatten $1.png

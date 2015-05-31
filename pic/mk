@@ -1,0 +1,3 @@
+#!/bin/sh
+./pic2png sysdiag
+./pic2png sysdiag2
